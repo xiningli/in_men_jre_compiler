@@ -1,0 +1,2 @@
+this is to demostrate that if you replace the openjdk to JRE. code won't work. 
+So that the java.compiler api relies on the JDK. JRE is not sufficient. 
