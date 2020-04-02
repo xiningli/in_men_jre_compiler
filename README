@@ -1,2 +1,18 @@
 this is to demostrate that if you replace the openjdk to JRE. code won't work. 
 So that the java.compiler api relies on the JDK. JRE is not sufficient. 
+
+
+because in the pure jre environment
+we got the
+➜  in_men_jre_compiler git:(master) ✗ docker run e20222ae13e0
+Exception in thread "main" java.lang.NullPointerException
+        at in.men.jre.compiler.InMemoryJavaCompiler.compileAll(InMemoryJavaCompiler.java:80)
+        at in.men.jre.compiler.InMemoryJavaCompiler.compile(InMemoryJavaCompiler.java:126)
+        at in.men.jre.compiler.App.main(App.java:25)
+
+
+but in the JDK environment
+
+we have 
+
+hello printing out
